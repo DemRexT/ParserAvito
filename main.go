@@ -21,7 +21,7 @@ func buildAvitoURL(page int) string {
 func ExampleScrape() {
 	client := &http.Client{}
 
-	for page := 1; page <= 10; page++ {
+	for page := 1; page < 11; page++ {
 		link := buildAvitoURL(page)
 		fmt.Println("PAGE:", page)
 
